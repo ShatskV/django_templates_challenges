@@ -13,6 +13,6 @@ from django.shortcuts import render
 
 
 def registration_view(request):
-    title = 'Регистрация'
+    context = {'title': 'Регистрация'}
 
-    return render(request, 'level_1/registration.html')  # код писать тут
+    return render(request, 'level_1/registration.html', context)  # код писать тут
